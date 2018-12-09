@@ -1,11 +1,11 @@
-# kotlin-sandbox
+# java-sandbox
 
-[![License](https://img.shields.io/github/license/ohtomi/kotlin-sandbox.svg)](https://github.com/ohtomi/kotlin-sandbox)
-[![Build Status](https://travis-ci.org/ohtomi/kotlin-sandbox.svg?branch=master)](https://travis-ci.org/ohtomi/kotlin-sandbox)
+[![License](https://img.shields.io/github/license/ohtomi/java-sandbox.svg)](https://github.com/ohtomi/java-sandbox)
+[![Build Status](https://travis-ci.org/ohtomi/java-sandbox.svg?branch=master)](https://travis-ci.org/ohtomi/java-sandbox)
 
 ## Description
 
-This is a repository of `Kotlin` + `Gradle` sandbox.
+This is a repository of `Java` + `Gradle` sandbox.
 
 ## Usage
 
