@@ -7,6 +7,9 @@ import kotlin.String
  *   `$ ./gradlew syncLibs`
  * to update this file */
 object Libs {
+    const val com_github_spotbugs_gradle_plugin: String =
+            "com.github.spotbugs:com.github.spotbugs.gradle.plugin:" + Versions.com_github_spotbugs_gradle_plugin
+
     /**
      * [guava website](https://github.com/google/guava) */
     const val guava: String = "com.google.guava:guava:" + Versions.guava

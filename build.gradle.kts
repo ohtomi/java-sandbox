@@ -3,6 +3,10 @@ import org.gradle.jvm.tasks.Jar
 
 plugins {
     java
+    id("checkstyle")
+    id("pmd")
+    id("com.github.spotbugs").version(Versions.com_github_spotbugs_gradle_plugin)
+    id("jacoco")
     id("net.ossindex.audit").version(Versions.net_ossindex_audit_gradle_plugin)
     id("jmfayard.github.io.gradle-kotlin-dsl-libs").version(Versions.jmfayard_github_io_gradle_kotlin_dsl_libs_gradle_plugin)
     application
@@ -45,9 +49,26 @@ val jar by tasks.existing(Jar::class) {
     })
 }
 
-val check by tasks.existing {
-    //    dependsOn(ktlintCheck, tasks["detekt"])
-}
+// https://docs.gradle.org/current/userguide/checkstyle_plugin.html
+// https://checkstyle.org
+// https://github.com/checkstyle/checkstyle
+//checkstyle {}
+
+// https://docs.gradle.org/current/userguide/pmd_plugin.html
+// https://pmd.github.io
+// https://github.com/pmd/pmd
+// https://github.com/pmd/pmd/tree/pmd_releases/6.5.0/pmd-java/src/main/resources/rulesets/java
+//pmd {}
+
+// https://docs.gradle.org/current/userguide/findbugs_plugin.html
+// https://spotbugs.github.io
+// https://github.com/spotbugs/spotbugs
+//spotbugs {}
+
+// https://docs.gradle.org/current/userguide/jacoco_plugin.html
+// https://www.jacoco.org
+// https://github.com/jacoco/jacoco
+//jacoco {}
 
 // https://github.com/OSSIndex/ossindex-gradle-plugin
 audit {
