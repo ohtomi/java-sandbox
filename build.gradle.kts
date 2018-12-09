@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.guava:guava:26.0-jre")
+    implementation(Libs.guava)
 
-    testImplementation("junit:junit:4.12")
+    testImplementation(Libs.junit)
 }
 
 
@@ -30,7 +30,7 @@ reckon {
 
 val props = Props(project)
 
-val bintrayDryRun = false
+val bintrayDryRun = true
 val bintrayPublish = true
 val bintrayOverride = false
 
