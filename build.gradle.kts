@@ -30,7 +30,7 @@ reckon {
 
 val props = Props(project)
 
-val bintrayDryRun = true
+val bintrayDryRun = false
 val bintrayPublish = true
 val bintrayOverride = false
 
