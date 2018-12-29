@@ -1,6 +1,6 @@
 # java-sandbox
 
-[![License](https://img.shields.io/github/license/ohtomi/java-sandbox.svg)](https://github.com/ohtomi/java-sandbox)
+[![License](https://img.shields.io/github/license/ohtomi/java-sandbox.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/ohtomi/java-sandbox.svg?branch=master)](https://travis-ci.org/ohtomi/java-sandbox)
 
 ## Description
