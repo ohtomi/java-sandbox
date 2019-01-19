@@ -1,6 +1,7 @@
 package com.github.ohtomi.java.sandbox;
 
 public class App {
+
     public String getGreeting() {
         return "Hello world.";
     }
