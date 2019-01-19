@@ -29,4 +29,8 @@ object Libs {
 
     const val org_ajoberstar_reckon_gradle_plugin: String =
             "org.ajoberstar.reckon:org.ajoberstar.reckon.gradle.plugin:" + Versions.org_ajoberstar_reckon_gradle_plugin
+
+    /**
+     * [mockito-core website](https://github.com/mockito/mockito) */
+    const val mockito_core: String = "org.mockito:mockito-core:" + Versions.mockito_core
 }

@@ -23,6 +23,7 @@ dependencies {
     implementation(Libs.guava)
 
     testImplementation(Libs.junit)
+    testImplementation(Libs.mockito_core)
 }
 
 

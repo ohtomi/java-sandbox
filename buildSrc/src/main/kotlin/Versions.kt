@@ -7,7 +7,7 @@ import kotlin.String
  *
  * YOU are responsible for updating manually the dependency version. */
 object Versions {
-    const val com_github_spotbugs_gradle_plugin: String = "1.6.6" 
+    const val com_github_spotbugs_gradle_plugin: String = "1.6.9" 
 
     const val guava: String = "27.0.1-jre" 
 
@@ -21,6 +21,8 @@ object Versions {
 
     const val org_ajoberstar_reckon_gradle_plugin: String = "0.9.0" 
 
+    const val mockito_core: String = "2.23.4" 
+
     /**
      *
      *   To update Gradle, edit the wrapper file at path:
@@ -29,9 +31,9 @@ object Versions {
     object Gradle {
         const val runningVersion: String = "5.0"
 
-        const val currentVersion: String = "5.0"
+        const val currentVersion: String = "5.1.1"
 
-        const val nightlyVersion: String = "5.2-20181208000047+0000"
+        const val nightlyVersion: String = "5.3-20190119000045+0000"
 
         const val releaseCandidate: String = ""
     }
