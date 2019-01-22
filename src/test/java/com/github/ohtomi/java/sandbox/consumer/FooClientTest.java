@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class FooClientTest {
 
@@ -25,5 +24,6 @@ public class FooClientTest {
         String actual = client.fizzBuzz(1);
         String expected = "## 1 ##";
         assertEquals(expected, actual);
+        verify(stub).execute(1);
     }
 }
