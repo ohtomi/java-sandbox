@@ -10,6 +10,10 @@ public class FooClient {
         this.fooService = fooService;
     }
 
+    public FooService getFooService() {
+        return fooService;
+    }
+
     String fizzBuzz(int i) {
         return "## " + this.fooService.execute(i) + " ##";
     }
