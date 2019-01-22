@@ -11,7 +11,7 @@ import static org.mockito.Mockito.when;
 public class FooClientTest {
 
     @Test
-    public void fizzBuzz() {
+    public void testStub() {
         FooService stub = mock(FooService.class);
         when(stub.execute(anyInt())).thenReturn("-");
         when(stub.execute(1)).thenReturn("1");
