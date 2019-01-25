@@ -1,5 +1,6 @@
 package com.github.ohtomi.java.sandbox.consumer;
 
+import com.github.ohtomi.java.sandbox.provider.FooProvider;
 import com.github.ohtomi.java.sandbox.spi.FooService;
 import org.junit.Test;
 
@@ -13,17 +14,23 @@ public class FooClientTest {
     public void testStub() {
         FooService stub = mock(FooService.class);
         when(stub.execute(anyInt())).thenReturn("-");
-        when(stub.execute(1)).thenReturn("1");
-        when(stub.execute(2)).thenReturn("2");
-        when(stub.execute(3)).thenReturn("Fizz");
-        when(stub.execute(4)).thenReturn("4");
-        when(stub.execute(5)).thenReturn("Buzz");
+        when(stub.execute(1)).thenReturn("xxx");
 
         FooClient client = new FooClient(stub);
 
         String actual = client.fizzBuzz(1);
+        String expected = "## xxx ##";
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSpy() {
+        FooService spy = spy(FooProvider.class);
+        FooClient client = new FooClient(spy);
+
+        String actual = client.fizzBuzz(1);
         String expected = "## 1 ##";
         assertEquals(expected, actual);
-        verify(stub).execute(1);
+        verify(spy).execute(1);
     }
 }
